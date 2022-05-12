@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Document</title>
+</head>
+<body>
+
+	<button type="button" onclick="jan()";>click me</button>
+	<h1 id="display">this is paragraph</h1>
+	<script>
+		function jan(){
+			var x= prompt('this is frist naumber ',"");
+			var y= prompt('this is frist naumber ',"");
+
+			 num1 = parseInt(x);
+		    num2 = parseInt(y);
+
+			var total=num1+num2;
+			// consol.log(total);
+			// document.write(total)
+			// alert("total naumber is" +total);
+			document.getElementById('display').innerHTML = total;
+			
+		}
+	</script>
+
+	<!-- <script>
+		function sumFunc(){
+  			var x = prompt("Enter your 1st number", "");
+ 			var y = prompt("Enter your 2nd number", "");
+ 			x =  parseInt(x);
+ 			y =  parseInt(y);
+
+ 			var total =  x + y;
+ 		document.getElementById('display').innerHTML = total;
+ 			//alert("Yes, total number is " + total);
+		}
+	</script>
+<button onclick="sumFunc()">click here</button>
+
+<h1 id="display">Total will show here</h1> -->
+<!-- 
+	<script>
+function sumFunc(){
+	var x = prompt("Enter your 1st number", "");
+	var y = prompt("Enter your 2nd number", "");
+	var x = parseInt(x);
+	var y = parseInt(y);
+	var total = x + y;
+	
+	document.getElementById('display').innerHTML = total;
+}
+</script>
+	<button onclick="sumFunc()">Click here</button>
+
+<div id="display">
+
+	<h1>Total number will show here</h1>
+</div> -->
+
+
+</body>
+</html>

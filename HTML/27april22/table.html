@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Document</title>
+	<style>
+		caption{
+			font-weight: bold;
+			font-size: 40px;
+			border: 1px solid red;
+			color: orange;
+			margin-bottom: 10px ;
+		}
+		table,td,tr{
+			/*border: 1px solid red;*/
+			border-width: 1px;
+			border-style: dashed;
+			border-color: blue;
+			border-collapse: collapse;		}
+		tbody{
+			
+				background-color: 255,200,100;
+			color:white;
+			background-color:#A02C2C;
+		}
+		thead,tfoot{
+			background-color: #1D99D7;
+			color: white;
+			font-weight: bold;
+		}
+		.content{
+			text-align: center;
+		}
+		.right{
+			text-align: right;
+		}
+		td,th{
+		padding: 5px;
+		}
+	</style>
+</head>
+<body>
+	<h1>Table with thead, tbody,tfoot</h1>
+	<table border="2" width="500" height="400">
+		<caption> Product List</caption>
+		<thead>
+			<tr>
+				<th>Item</th>
+				<th>Quantity</th>
+				<th>Price</th>
+				<th>Extended</th>
+			</tr>
+		</thead>
+		<tbody >
+			<tr  >
+				<td>Hard Disk</td>
+				<td class="content">1</td>
+				<td>500$</td>
+				<td>499$</td>
+			</tr>
+			<tr>
+				<td>C Drive</td>
+				<td class="content">1</td>
+				<td>500$</td>
+				<td>499$</td>
+			</tr>
+			<tr>
+				<td>Cds</td>
+				<td class="content">10</td>
+				<td>20$</td>
+				<td>50$</td>
+			</tr>
+		</tbody>
+		<tfoot>
+			<tr>
+				<th colspan="3" class="right">Total Amount</th>
+				<th>950$</th>
+				
+			
+			</tr>
+		</tfoot>
+	</table>
+</body>
+</html>
