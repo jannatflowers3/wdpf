@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Document</title>
+</head>
+<body>
+	<script>
+		// var test_primeNumbercheck=parseInt(prompt("Enter your number",""))
+		function test_prime(n) {
+			if (n===1) {
+                // return false;
+                return n+ "is not a primer number"
+			}
+           else if (n===2){
+              // return true;
+              return n+ "is a prime number"
+           }
+      
+      else{
+         for(var x =2;x<n; x++)
+        if (n % x===0) {
+        	return "Not a prime number"
+        }
+      }
+  return n+ "is a prime number"
+
+		}
+		document.write(test_prime(prompt("enter your naumber","")))
+		// document.write(test_prime(test_primeNumbercheck));
+		// alert(test_prime[n])
+
+	</script>
+</body>
+</html>
