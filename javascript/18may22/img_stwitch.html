@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Document</title>
+</head>
+<body>
+	<!-- <h1>image switching on mouse  </h1>
+	<a href="3" onmouseover="func1()" onmouseout="func2()"> <img src="cat.jpg" name ="sample1"alt="cat" width="400"></a> -->
+
+
+	<script>
+		function  func1(){
+        document.sample1.src="142774.jpg"
+		}
+
+
+            function  func2(){
+        document.sample1.src="cat.jpg"
+		}
+
+		
+
+
+		function func4(){
+		var fast=document.getElementById("vauleid").value;
+		document.getElementById('show').innerHTML=fast;
+		}
+	</script>
+
+
+	<!-- <div>
+		<button onclick="func4()">click here</button>
+		<input type="text" value ="rahim" id="vauleid">
+	<h1 id="show"></h1>
+	</div> -->
+
+
+
+
+
+
+<!-- <script>
+function func4()
+{
+	// form ar name value and input ar name value diye .value dite n variable nite hobe  ai variable ta input id diye document . getement diye innerhtml a  variable dite hobe
+		var fast = document.myform.firstname.value;
+	document.getElementById('vauleid').innerHTML=fast;
+}
+</script>
+	<div>
+		<form action="" name="myform">
+		<button onclick="func4()">click here</button>
+		<input type="text" value ="rahim" id="vauleid" name="firstname">
+	<h1 id="show"></h1>
+	</form> -->
+	</div>
+
+	<script>
+		function jannat(){
+             var output = document.formname.inputbutton.value;
+             document.getElementById('inpuid').innerHTML=output;
+		}
+	</script>
+	<form action="" name="formname">
+		<input type="text" name="inputbutton" id="inpuid" value="jannatul">
+		<button type="button" onclick="jannat()" >Send </button>
+	
+	
+
+	</form>
+</body>
+</html>

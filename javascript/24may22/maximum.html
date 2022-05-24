@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Document</title>
+</head>
+<body>
+	<!-- <script>
+		// var x = [5,8,9];
+		
+		// x = Math.max(x);
+		// for(var i =0;i<=x.length;i++){
+		// 	document.write(x[i]+"<br>");
+		// }
+
+
+
+	var a= 30;
+	var b = 20;
+	var c = 10;
+	function jannat(){
+		if(a>b && a>c){
+			document.write(a+" a is a maximum number")
+		}
+		else if(b>a && b>c){
+			document.write(b+" b is the maximum number")
+		}
+		else{
+			document.write(c+" c is  the maxmum number")
+		}
+	}
+jannat();
+	</script> -->
+<script>
+	function janntul(){
+	var first_number = document.form_name.number1.value;
+	var second = document.form_name.number2.value;
+	var third = document.form_name.number3.value;
+
+
+	if(first_number>60 && second>80 && third>70){
+		alert("you are passed");
+	}
+	else {
+		alert("you are failed")
+	}
+	}
+  
+	
+</script>
+
+	<form action="" name="form_name">
+		<input type="number" name="number1" value="" ><br>
+	<input type="number" name="number2" value="" ><br>
+	<input type="number" name="number3" value="" ><br>
+ <button type="button" onclick="janntul();"> submit</button>
+	</form>
+</body>
+</html>
