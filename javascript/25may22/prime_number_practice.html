@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Document</title>
+</head>
+<body>
+	<!-- <script>
+		function prime_number(n) {
+			if(n==1){
+				return n+"is not a prime number"
+			}
+			else if(n==2){
+				return n+"is  also a prime number"
+			}
+			else{
+				for(var i=2;i<n;i++){
+					if (n%i==0){
+                           return n+"is also not a prime number"
+					}
+				}
+			}
+			return n+"is a prime number"
+		}
+		document.write(prime_number(prompt("Enter your number","")));
+
+	</script> -->
+
+	<script>
+		function jannat(n){
+			if(n==0){
+				return 1;
+			}
+			else{
+				return n*jannat(n-1);
+			}
+		}
+		document.write(jannat(prompt("enter your number","")));
+	</script>
+</body>
+</html>

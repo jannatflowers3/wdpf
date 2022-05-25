@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Document</title>
+</head>
+<body>
+
+	<!-- <form action="" name="form_name">
+		Enter Your MCQ Number :  <input type="Number" name="MCQ_form" value=""><br>
+		Enter Your Evidence Number :  <input type="Number" name="evi_form" value=""><br>
+		Enter Your Descriptive Number :  <input type="Number" name="sd_form" value="">      <br>
+		<button type="button" onclick="jannat()">Send</button>
+		<p id="demo"></p>
+	</form>
+	<script>
+		function jannat(){
+                var x = document.form_name.MCQ_form.value;
+                var y = document.form_name.evi_form.value;
+                var z = document.form_name.sd_form.value;
+                
+                if(x>=60 && y>=60 && z>=50){
+                	// document.write("you are passed")
+
+
+                	document.getElementsById('demo').innerHTML=x,y,z
+                }
+                else{
+                	document.getElementsById('demo').innerHTML=;
+
+                	// document.write("you are failed")
+                }
+		}
+	</script> -->
+
+<!-- // result+="<h1> your result </h1>";
+            // result+="mcq "n  -->
+
+
+
+
+	<!-- <script>
+		 function join(){
+		 	var MCQ = document.form_name.MCQ_form.value;
+          MCQ= parseInt(MCQ)
+
+          var evi_form = document.form_name.evi_form.value;
+          evi_form= parseInt(evi_form)
+
+          var sd_form = document.form_name.sd_form.value;
+          sd_form= parseInt(sd_form)
+            
+            var result="";
+            
+           if(MCQ>=80 && evi_form>=60 && sd_form>=60){
+                         result ="you have passed";
+                       
+           }
+           else{
+                         result ="you have failed";
+           
+           }
+           // document.getElementsById('demo').innerHTML=result;
+ document.getElementsById("demo").innerHTML=result;
+ // console.log(result)
+
+
+		 	// alert(MCQ)
+		 }
+	</script>
+	<form action="" name="form_name">
+		Enter Your MCQ Number :  <input type="text" name="MCQ_form" value=""><br>
+		Enter Your Evidence Number :  <input type="text" name="evi_form" value=""><br>
+		Enter Your Descriptive Number :  <input type="text" name="sd_form" value="">      <br>
+		<button type="button" onclick="join()" >Send</button>
+
+	</form>
+ <h1 id="demo"></h1> -->
+<form name="formname">
+ 	<input type="text" name="inpname" value=""><br>
+ 	<input type="text" name="inpname2" value=""><br>
+ 	<input type="button" name="submit" value="send"  onclick="jannat()" >
+ </form>
+<h1 id="demo"></h1>
+<script>
+	function jannat(){
+		var x= document.formname.inpname.value;
+		var y= document.formname.inpname2.value;
+		var result ="";
+		if(x>=80 && y>=50){
+         result="you are pass"
+		}
+		else{
+			result ="you are failed"
+		}
+		// alert(result);
+		document.getElementsById("demo").innerHTML = result;
+	}
+</script>
+ 
+ 
+</body>
+</html>
