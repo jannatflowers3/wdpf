@@ -6,22 +6,22 @@
 	<title>Document</title>
 </head>
 <body>
+
+	<script>
+		var img1= "java2.jpg"
+		var img2= "java.jpg"
+	
+		function interval(){
+			window.setInterval("document.cup.src= img1",3000)
+		}
+		function timeout(){
+		window.setTimeout("document.cup.src=img2",3000);
+		// window.clearInterval(alpha)
+		// window.interval();
+		}
+	</script>
 	<img src="java.jpg" alt="javaimg" name="cup">
 	<button onclick="interval()">Interval</button>
 	<button onclick="timeout()">timeout</button>
-	<script>
-		var img1= "java.jpg"
-		var img2= "java2.jpg"
-		var alpha;
-		function interval(){
-			window.setInterval("document.cup.src.= img1",1000)
-		}
-		function timeout(){
-		window.setTimeout("document.cup.src.=img2",1000);
-		// window.clearInterval(alpha)
-		window.interval(alpha);
-		}
-	</script>
-
 </body>
 </html>
