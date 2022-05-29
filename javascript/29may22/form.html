@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Document</title>
+</head>
+<body>
+		<script>
+		function formclick() {
+			var x= document.forms[0].elements.length;
+			var output="";
+			// alert(x)
+			for(var i=0;i<x-1;i++){
+                   output+=document.forms[0].elements[i].value+"<br>";
+
+			}
+			document.getElementById('display').innerHTML=output;
+		}
+		
+
+	</script>
+	<form action="" name="myform">
+		<input type="text" placeholder="Enter Name"><br>
+		<textarea name="" id="" cols="30" rows="10" placeholder="Enter Address"></textarea><br>
+		<input type="radio"> male
+		<input type="radio" > female
+		<select >
+			<option value="" selected disabled>Select One</option>
+			<option value="Dhaka">Dhaka</option>
+			<option value="Sylhet">Sylhet</option>
+			<option value="Khulna">Khulna</option>
+		</select> <br>
+		<button type="button" onclick="formclick()"> Click</button>
+
+	</form>
+	<div id="display"></div>
+
+
+</body>
+</html>
