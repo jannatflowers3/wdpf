@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Document</title>
+</head>
+<body>
+	<h1> Pick One of the following as the most important :</h1>
+	<form action="" name="myform">
+		<input type="text" name="myname">
+	 Gender	<input type="radio" name="gender" value="cost" checked>Cost<br>
+		<input type="radio" name="gender" value="Reliability"> Reliability<br>
+		<input type="radio" name="gender" value="Reputation">Reputation<br>
+		<input type="radio" name="gender" value="ease">Ease of Cost<br>
+		<h1>Which Of the following do you plan to purcahse with your computer ? Check all that apply :</h1>
+		<input type="checkbox" name="Printer" value="Printer">Printer<br>
+		<input type="checkbox" name="dist" value="dist">High Capacity Disk<br>
+		<input type="checkbox" name="scanner" value="scanner">Scanner<br>
+		<input type="checkbox" name="memory" value="memory">Added Memory<br>
+		<button type="button" onclick="formbutton()">click me</button><br>
+		<textarea name="submiteHere" cols="30" rows="10"></textarea>
+		<!-- <p id="submiteHere"></p> -->
+	</form>
+
+<script>
+	function formbutton() {
+		var hardawareVar = document.myform;
+		var display = "you ans \n";
+		// alert(hardawareVar.length)
+		for(var i = 0; i<hardawareVar.length ; i++){
+			if(hardawareVar.elements[i].checked==true){
+			// alert(hardawareVar.elements[i].value+"<br>");
+			display+= hardawareVar.elements[i].value+"\n";
+}
+		}
+		hardawareVar.submiteHere.value=display;
+	}
+</script>
+
+
+
+	<!-- only form ar name na diye elements ar length diye data pawa jai -->
+	<!-- <script>
+		function formbutton() {
+			var x= document.forms[0].elements.length;
+			var y = "";
+			for(var i=0;i<x-1;i++){
+
+				y+=document.forms[0].elements[i].value+"<br>";
+			}
+			document.getElementById('submiteHere').innerHTML=y;
+		}
+	</script> -->
+</body>
+</html>

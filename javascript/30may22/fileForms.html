@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Document</title>
+</head>
+<body>
+	<form name="myform">
+		<input type="text" name="myname"><br>
+		<input type="file" name="fileuploasd"><br>
+		<button type="button" onclick="fileuplod()"> click me</button>
+	</form>
+	<script>
+		function fileuplod() {
+			// window.location  file path indicate kore dai
+			// alert(window.location)
+
+			window.location = document.myform.myname.value;
+			// alert(window.location)
+		}
+	</script>
+</body>
+</html>

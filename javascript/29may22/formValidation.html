@@ -12,6 +12,7 @@
 			var pass = document.login.password.value.length;
 			var pattern = email.search(/^[a-zA-Z]+@[a-zA-Z]+\.[a-zA-Z]{2,3}$/);
 
+
 			var status =false;
 			if (pattern==-1) {
 				alert("Email address is invalid");
@@ -37,5 +38,12 @@
 		<input type="pass" name="password" placeholder="Enter Your password"><br>
 		<input type="button" name="submit" value="Login" onclick="validation()">
 	</form>
+	<script>
+		function validation() {
+			var x= document.login.email.value;
+			var y = document.login.password.value;
+			var total = x.search(/^/)
+		}
+	</script>
 </body>
 </html>
