@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Document</title>
+</head>
+<body>
+	<form name="myform">
+		Name : <input type="text"  name="myname" placeholder="enter your name"> <br>
+		Number : <input type="number"  name="number"> <br>
+		email : <input type="email"  name="email"> <br>
+		Remarks :<textarea name="message" id="" cols="30" rows="10"></textarea><br>
+
+		Gender : <input type="radio" name="Gender" value="male">Male
+		 <input type="radio" name="Gender" value="female">FeMale <br>
+
+		 Courses : <input type="checkbox" class="Course" value="NT" checked>NT
+		     <input type="checkbox"  class="Course" value="IAD">IAD
+		     <input type="checkbox"  class="Course" value="DDD">DDD
+		    <input type="checkbox"  class="Course" value="ESAD">ESAD <br>
+		 Location : 
+		 <select  name="location">
+		 	<option value=""  selected disabled> selected one</option>
+		 	<option value="Banani" name="select" selected disabled> Banani</option>
+		 	<option value="Dhanmondhi">Dhanmondhi</option>
+		 	<option value="Mirpur">Mirpur</option>
+		 </select> <br>
+		 <button type="button" onclick="forSubmit()">Submit</button>
+		 <h1 id="submithere"></h1>
+	</form>
+	<script>
+		function forSubmit(){
+			var name = document.myform.myname.value;
+			var number = document.myform.number.value;
+			var email = document.myform.email.value;
+			var message = document.myform.message.value;
+			var Gender = document.myform.Gender.value;
+			var location = document.myform.location.value;
+               // display =""; aita dile porer display+= dile hobe
+
+              var courses= document.getElementsByClassName('Course');
+              var selectedcoursers="<h3>selected course</h3>";
+              for(var i=0;i<courses.length;i++){
+              	if(courses[i].checked){
+              		selectedcoursers+=courses[i].value+",";
+              	}
+              }
+            var display="<h1>all data </h1>"
+               display+="Your Name :"+name+"<br>"
+               display+="Your number :"+number+"<br>"
+               display+="Your email :"+email+"<br>"
+               display+="Your message :"+message+"<br>"
+               display+="Your Gender :"+Gender+"<br>"
+               display+="Your location :"+location+"<br>"
+               display+=selectedcoursers+"<br>"
+
+
+			var mywindow= window.open("","","width=500,height=600,top=300,left==300");
+			mywindow.document.write(display)
+		}
+	</script>
+</body>
+</html>
