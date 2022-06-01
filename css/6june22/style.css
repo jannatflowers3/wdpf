@@ -1,0 +1,22 @@
+*{
+	text-align: center;
+}
+#para{
+	color:red;
+	font-size: 14px;
+	background-color: blue;
+}
+h1,h2,h3{
+	text-align: left;
+	color: #E52C07;
+}
+article.main{
+	background-color: gray;
+	border:2px solid red;
+}
+.center{
+	text-align: left;
+}
+.large{
+	font-size: 30px;
+}
