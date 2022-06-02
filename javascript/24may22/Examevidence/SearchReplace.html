@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Search Engine</h1>
+
+    <script>
+        function findWord(){
+             var content = document.search.content.value;
+             var searchWord = document.search.searchString.value;
+            var result = content.search(searchWord);
+            //  alert(result)
+            if(result==-1){
+                alert("Dosen't match with this word"+searchWord)
+            }
+           else{
+               alert("yes , found this word"+searchWord +"which index is  + " + result);
+               
+           }
+
+        }
+    </script>
+    <form  name="search">
+        <textarea name="content"  cols="30" rows="10" placeholder="Put Your Content">
+        </textarea><br>
+        <input type="text" name="searchString" placeholder="Enter Your Word"><br>
+        <input type="button" value="Search" onclick="findWord()">
+    </form>
+</body>
+</html>
