@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Factorial</title>
+    <style>
+        .factorial{
+            background-color: #e5aeae;
+    width: 500px;
+    margin: 0 auto;
+    padding: 40px;
+}
+        #demo{
+            color: red;
+        }
+    </style>
+</head>
+<body>
+     <form name="myform" class="factorial">
+         Factorial value : <input type="number" name="number" placeholder="Enter your Factorial Number"><br>
+         <input type="button" onclick="factorialValue()" value="Submit">
+         <h3 id="demo" ></h3>
+     </form>
+     <script>
+         function myfactorial (num){
+             if(num==0){
+                 return 1;
+             }
+             else{
+                 return num*myfactorial (num-1)
+             }
+
+         }
+         function factorialValue(){
+             var facvalue = document.myform.number.value;
+             var display = myfactorial(facvalue);
+             document.getElementById('demo').innerHTML="Your Enter number is  : "
+             +facvalue+ "<br> factorial value is : "+display;
+         }
+     </script>
+</body>
+</html>

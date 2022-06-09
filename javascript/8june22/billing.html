@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form name="myform">
+    <label> First Name :</label>
+    <input type="text" name="fName" ><br>
+    <label> Last Name :</label>
+    <input type="text" name="lName" ><br>
+
+    <label> Gender :</label>
+    <input type="radio" name="gender"  value="male">Male
+    <input type="radio" name="gender" value="female" >FeMale<br>
+
+
+    <label> Language :</label>
+    <input type="checkbox" name="language" value="Telugu">Telugu
+    <input type="checkbox" name="language" value="English">English
+    <input type="checkbox" name="language" value="Hindi">Hindi
+
+
+    
+    <!-- <select name="language">
+        <option disabled  selected>Selected One</option>
+        <option value="Telugu" class="items">Telugu</option>
+        <option value="English" class="items">English</option>
+        <option value="Hindi" class="items">Hindi</option>
+
+
+    </select> -->
+    <br>
+    <label> Email :</label>
+    <input type="email" name="email" ><br>
+
+    <label> Address:</label>
+    <textarea name="message"  cols="30" rows="10"></textarea><br>
+
+    <label> State :</label>
+    <select name="State">
+        <option disabled  selected>Choose State</option>
+        <option value="Bangladesh" class="items">Bangladesh</option>
+        <option value="USA" class="items">USA</option>
+        <option value="UK" class="items">UK</option>
+    </select><br>
+    <label> Zip :</label>
+    <input type="number" name="zip" ><br>
+
+
+    <label> Credit Card Type :</label>
+    <select name="card">
+        <option disabled  selected>Choose Cradut Card</option>
+        <option value="Debit" class="items">Debit</option>
+        <option value="Credit" class="items">Credit</option>
+        <option value="Master Card" class="items">Master Card</option>
+    </select><br>
+    <button type="button" onclick="submitbutton()">Submit</button>
+    <!-- <button type="button" onclick="mywin.close()">Close</button> -->
+
+    
+    </form>
+    <script>
+            // var mywin;
+        function submitbutton(){
+            var fname = document.myform.fName.value;
+            var lName = document.myform.lName.value;
+
+            var gender = document.myform.gender.value;
+
+            var language = document.myform.language.value;
+            var display ="";
+            
+            var languSelect = document.getElementsByClassName('items');
+            for(var i=0;i<languSelect.length;i++){
+                if(languSelect[i].checked){
+                    display+=languSelect[i].value+"<br>";
+                }
+            }
+
+            var email = document.myform.email.value;
+            var emailvali= email.search(/^[a-zA-Z]+@[a-zA-Z]+\.[a-zA-Z]{3,4}$/)
+            if(emailvali==-1){
+                alert("invalid email")
+            }
+            else{
+                document.write(mywin2)
+            }
+
+            var message = document.myform.message.value;
+
+            var State = document.myform.State.value;
+            var zip = document.myform.zip.value;
+
+            var card = document.myform.card.value;
+            display+="My Frist Name : "+fname+"<br>"+"My Last Name : "+lName+"<br>"+"Gender : "+
+            gender+"<br>"+"Language : "+language+"<br>"
+            +"Your Email : "+email+"<br>"+"Address : "+message+"<br>" +"State : "+State+"<br>"+"zip : "+zip
+            +"<br>"+"Creadit Card : "+card;
+                    // mywin= window.open("","","width=500,height=400,top=300,left=400");
+               var     mywin2= window.open("","","width=500,height=400,top=300,left=400");
+
+                 
+
+               mywin2.document.write(display)
+        }
+   
+    </script>
+</body>
+</html>

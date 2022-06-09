@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+         input[type=email], input[type=password]{
+             display: block;
+             width: 100%;
+             border:none;
+             margin: 20px 0;       
+             padding: 20px 0;
+         }
+         input[type=email]:focus, input[type=password]:focus{
+             /* border: 1px solid blue; */
+
+             background-color: gray;
+             text-transform: uppercase;
+         }
+
+         input[type=email]{
+             background-image: url('me1ss.png');
+             background-position: 20px;
+             background-repeat: no-repeat;
+         }
+         input[type=submit]{
+             width: 50%;
+             margin:10px auto;
+             cursor: pointer;
+             padding: 10px 0;
+
+
+         }
+         input[type=submit]:hover{
+             color:red;
+             background-color: black;
+         }
+         .login{
+             width: 50%;
+             border:none;
+             border-radius: 15px;
+             padding: 20px;
+             background-color: bisque;
+             /* transition: width 2s; */
+             margin: 50px auto;
+         }
+         /* .login:hover{
+             width: 40%;
+         } */
+         .login textarea{
+                   width: 100%;
+                   padding: 20px;
+                   box-sizing: border-box;
+                   resize: none;
+                   border: none;
+         }
+         .login  textarea:focus{
+ background-color: gray;
+ resize: none;
+         }
+    </style>
+</head>
+<body>
+   <div class="login">
+    <form  name="form">
+        <label for="email">Email</label>
+        <input type="email" name="email" id="email">
+        <label for="message">message</label>
+
+        <label for="message">Email</label>
+       <textarea name="message" id="message" cols="30" rows="10"></textarea>
+       <label for="password">Password</label>
+        <input type="password" name="password" id="password">
+        <input type="submit" name="submit" value="Login" >
+    
+        </form>
+   </div>
+</body>
+</html>

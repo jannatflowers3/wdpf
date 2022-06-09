@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trainee Data</title>
+    <style>
+        form {
+    background: #f1c4c4;
+    width: 506px;
+    margin: 0 auto;
+    padding: 50px;
+}
+    </style>
+</head>
+<body>
+    
+    <form  name="myform">
+        <h1> Trainee Form</h1>
+        Name: <br><input type="text" name="name" placeholder="Enter your name"><br>
+        Contact:<br> <input type="number" name="contact" placeholder="Enter your contact number"><br>
+      Remark : <br><textarea name="remark" id="" cols="30" rows="10"></textarea><br>
+        Sex : <input type="radio" name="gender" value="Male">Male
+        <input type="radio" name="gender" value="Female">Female<br>
+
+        Courses :<br>
+        <input type="checkbox" class="courses" value="NT">NT
+        <input type="checkbox" class="courses" value="IAD">IAD
+        <input type="checkbox" class="courses" value="DDD">DDD
+        <input type="checkbox" class="courses" value="ESAD">ESAD <br>
+         Location :<br>
+         <select name="location" >
+             <option selected disabled>Select One</option>
+             <option value="Banani">Banani</option>
+
+             <option value="Dhanmondhi">Dhanmondhi</option>
+             <option value="Mirpur">Mirpur</option> <br>
+         </select><br> <br>
+         <button type="button" onclick=" submitting()">Submit</button>
+    </form>
+    <script>
+        function submitting(){
+            var name = document.myform.name.value;
+            var contact = document.myform.contact.value;
+            var remark = document.myform.remark.value;
+
+            
+              var gender = document.myform.gender.value;
+              var course = document.getElementsByClassName('courses');
+              var courseSelect = "Courses : ";
+              for(var i=0;i<course.length;i++){
+                  if(course[i].checked){
+                    courseSelect+= course[i].value+" ,";
+                  }
+              }
+            var location = document.myform.location.value;
+            var disaplay ="";
+            disaplay+="Name : "+name+" <br>Contact : "+ contact+" <br>Remark : "+remark + "<br>Gender : "+ gender +"<br>Courses :"
+            + courseSelect+"<br>Location :"+location
+            var mywindo= window.open("","","width=600,height=500,top=300,left=700");
+            mywindo.document.write(disaplay);
+
+        }
+    </script>
+</body>
+</html>
