@@ -1,0 +1,141 @@
+*{
+    margin:0;
+    padding: 0;
+    font-family: 'Nunito', sans-serif;
+    box-sizing: border-box;
+    font-weight: 700;
+}
+h1,h2{
+    font-family: 'Nunito', sans-serif;
+}
+a{
+    text-decoration: none;
+    font-weight: 700;
+  
+}
+li{
+    list-style-type: none;
+}
+.header{
+    width: 100%;
+    height: 700px;
+    position: relative;
+    padding-top: 30px;
+}
+.navbar{
+width: 100%;
+display: flex;
+height: 70px;
+}
+.logo img{
+    margin-left:100px;
+}
+.menu{
+    display: flex;
+    justify-content: center;
+    width: 65%;
+}
+ul {
+    margin-top: 15px;
+}
+.menu ul li{
+    display: inline-block;
+    align-items: center;
+    padding:0px 20px;
+}
+.menu ul li a{
+    color:black;
+    font-size: 20px;
+}
+.menu ul li a:hover{
+    color: #ffa037;
+ 
+}
+.login a{
+    background-color: yellow;
+    font-size: 18px;
+    padding: 13px 22px; 
+    border-radius:10px;
+
+}
+.login{
+    padding: 13px 24px;
+    border-radius: 10px;
+    margin-right: 28px;
+}
+
+.banner {
+    width: 80%;
+    margin: 0px auto;
+    min-height: 600px;
+}
+.bannercontent {
+    width: 50%;
+    float: left;
+}
+.bannerimg {
+    width: 50%;
+    float: left;
+}
+.bannercontent h3{
+    margin-top: 124px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-size: 22px;
+}
+.bannercontent h1{
+    font-size: 54px;
+    margin: 30px 0px;
+    line-height: 57px;
+}
+.bannercontent p{
+    width: 68%;
+    font-size: 20px;
+    line-height: 38px;
+    font-weight: 500;
+}
+.signup {
+    margin: 50px 0px;
+}
+.signup a{
+    background: #ffa037;
+    padding: 12px 38px;
+    border-radius: 12px;
+    color: #000;
+    font-size: 20px;
+}
+.signup a:hover{
+    color:#000;
+}
+.signup i{
+    width: 50px;
+    height: 50px;
+    background: black;
+    color: #fff;
+    line-height: 50px;
+    text-align: center;
+    border-radius: 50%;
+    margin: 0px 10px;
+    cursor: pointer;
+        
+}
+/* .socialIcon{
+    width: 10%;
+    border: 1px solid red;
+    min-height: 50px;
+}
+.socialIcon ul li a{
+    line-height: 58px;
+    font-size: 34px;
+    color: #000;
+}
+.socialIcon ul li a:hover{
+    background-color: blue;
+} */
+
+ 
+
+
+
+
+
