@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Food Template</title>
+	<link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@600;700&family=Oswald:wght@400;600;700&display=swap" rel="stylesheet"> 
+	<script src="https://kit.fontawesome.com/230a51e61c.js" crossorigin="anonymous"></script>
+	<link rel="stylesheet" href="style.css">
+</head>
+<body>
+	<header class=" menupage contactuspage">
+			<div class="headermenu contacttitle">
+				<div class="logo">
+						<a href="index.html"><img src="images/logo.png" alt="Templatelogo"></a>
+				</div>
+				<div class="menu">
+					<ul>
+						<li><a href="index.html">Home</a></li>
+						<li><a href="about.html">About</a></li>
+						<li><a href="menu.html" >Our Menu</a></li>
+						<li><a href="contactus.html" class="active">Contact</a></li>
+					</ul>
+				</div>
+				<div class="pesonalContact">
+					<span>Gmail : jannatflowrs3@gmail.com</span>
+					<span>Contact: ++83836767</span>
+				</div>
+		</div>
+<!-- about banner start -->
+		<div class="aboutbanner menubanner">
+			<h3>Contact with Us t!</h3>
+			<h1>Contact.</h1>
+					<a href="contactus.html" class="commnButton aboutmenubutton">Contact Us</a>
+
+		</div>
+	</header>
+	<!-- contactpage start -->
+	<section class="contactform">
+		<div class="container">
+			<div class="contactLeft">
+			<h1>location</h1>
+			<p>9/13 South Kajla ,Noyanogor,Jatrabari,DHAKA-1236</p>
+			<h1>Fllow Us</h1>
+			<div class="footerRight contactpageICON">
+			<a href="https://www.facebook.com/jannatflowers4/"><i class="fa-brands fa-facebook"></i></a>
+			<a href="https://github.com/jannatflowers3"><i class="fa-brands fa-github"></i></a>
+			<a href="#"><i class="fa-solid fa-square-envelope"></i></a>
+			
+		</div>
+		<p class="contapara"> “A person who has an ardent or refined interest in food and alcoholic beverages. A foodie seeks new food experiences as a hobby .
+Foodies.Enjoy a wide variety of fresh produce at the best prices. Find a store near you. Weekly specials, Food Lover's"</p>
+		</div>
+		<div class="contactRight">
+			<h1>Booking A Table</h1>
+			<form name="myform">
+				<input type="text" name="name" placeholder="Enter your name"><p id="name"></p>			
+				<input type="number" name="number" placeholder="Enter your phone number"><p id="numb"></p>
+                    
+				<input type="email" name="email" placeholder="Enter your email"><p id="email"></p>
+				<textarea name="message" required placeholder="Enter your message" ></textarea>
+				<button type="button" onclick="mycontact()">Submit</button>
+				<p id="datasub"></p>
+			</form>
+		</div>
+		</div>
+	</section>
+	<script>
+		function mycontact() {
+			var name = document.myform.name.value;
+			var number = document.myform.number.value;
+			var email = document.myform.email.value;
+			var message = document.myform.message.value;
+			if (name=="") {
+				document.getElementById("name").innerHTML=" enter your name"
+			}
+			else if (number=="") {
+				document.getElementById("numb").innerHTML=" enter your phone number"
+			}
+			else if(email==""){
+				document.getElementById("email").innerHTML="enter your valid email"
+			}
+
+			else{
+				document.getElementById("datasub").innerHTML="all data are submitted"
+			}
+		}
+	</script>
+<!-- google map start -->
+<section class="googlemap">
+	<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3653.173628184335!2d90.44204331438753!3d23.70549289640854!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3755b9d0e7b9e775%3A0x18c76f4ba0c34a2d!2sKazla!5e0!3m2!1sen!2sbd!4v1655599920917!5m2!1sen!2sbd" width="100%" height="600" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+</section>
+	<!-- footer opt start -->
+<section class="footerTop">
+	<div class="container">
+		<div class="footerItems">
+			<img src="images/logo.png" alt="">
+			<p><i class="fa-solid fa-location-dot"></i>South Kajla,Jatrabari Dhaka-1236 </p>
+			<p><i class="fa-solid fa-envelopes-bulk"></i>jannatflowers3@gmail.com</p>
+			<p><i class="fa-solid fa-phone"></i>+++9076555566</p>
+		</div>
+		<div class="footerItems footerItemsPart02">
+				<h1>Hot Meal</h1>
+		<ul>
+			<li><a href="#">Burger King Whopper</a></li>
+			<li><a href="#">KFC Original Recipe Chicken</a></li>
+			<li><a href="#">Domino's Pepperoni Pizza</a></li>
+			<li><a href="#">Domino's Pepperoni Pizza</a></li>
+		</ul>
+		</div>
+		<div class="footerItems footerItemsPart02 footerItemsPart03">
+				<h1>Opening Hours</h1>
+		<p>Monday : 09.00am-10.00pm </p>
+			<p>Wednesday : 09.00am-10.00pm</p>
+			<p>Friday : 09.00am-10.00pm</p>
+			<p>Saturday & Sunday : Closed</p>
+		</div>
+	</div>
+</section>
+<!-- footer start -->
+<footer>
+	<div class="container">
+		<div class="footerleft">
+			<p>&copy 2022 Foodka. All Rights Reserved by jannatflowers</p>
+		</div>
+		<div class="footerRight">
+			<a href="https://www.facebook.com/jannatflowers4/"><i class="fa-brands fa-facebook"></i></a>
+			<a href="https://github.com/jannatflowers3"><i class="fa-brands fa-github"></i></a>
+			<a href="#"><i class="fa-solid fa-square-envelope"></i></a>
+		</div>
+	</div>
+</footer>
+</body>
+</html>

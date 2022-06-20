@@ -1,0 +1,89 @@
+*{
+    margin:0;
+    padding: 0;
+    font-size: 25px;
+    color: #fff;
+}
+@import url(css/style.css);
+h1{
+    color: #000;
+}
+header{
+    background-color: aquamarine;
+    text-align: center;
+    padding: 20px 0px;
+    display: flex;
+}
+.logo{
+    width: 5%;
+}
+.logo img{
+    width: 100%;
+}
+.text{
+
+    width: 50%;
+}
+.menu{
+background-color: brown;
+
+}
+.menu ul{
+list-style-type: none;
+}
+.menu ul li{
+display: inline-block;
+}
+
+.menu ul li a{
+    display:block;
+    padding: 20px;
+    text-decoration: none;
+    color: #fff;
+}
+.menu ul li a:hover{
+    background-color: gray;
+    border-radius: 4px;
+}
+.row{
+   display: flex;
+
+}
+.carad{
+margin-top: 30px;
+}
+.cardleft{
+    width: 75%;
+    background-color: #218fa1;
+}
+.cardleft h1{
+    /* color: #fff; */
+    font-size: 40px;
+}
+.cardleft p{
+    padding: 20px;
+    float: right;
+}
+.cardleft img{
+    width: 100%;
+    height: 50%;
+}
+.cardright{
+    width: 24%;
+    background-color:rgb(24 68 105 / 62%);
+    margin-left:1%;
+    color: #fff;
+   float: left;
+}
+.cardright h1{
+    font-size: 53px;
+
+}
+footer {
+    background-color: #6868ab;
+    text-align: center;
+    padding: 30px 0px;
+    clear: both;
+}
+
+
