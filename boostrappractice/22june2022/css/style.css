@@ -1,0 +1,31 @@
+.breadcrumb>li+li:before {
+    content: ">";
+}
+.navbar-default{
+    background-color: #000!important;
+    border-color: #000;
+}
+@media (min-width: 768px){}
+.navbar {
+    border-radius: 0!important;
+}
+.logo{
+    width: 15%;
+}
+.logo img{
+    width: 40%;
+}
+.leftpart{
+    background-color:#f5f5dc6e;
+    padding: 40px 0px;
+}
+.navbmargin{
+    margin-bottom: 0px;
+}
+.footer{
+    background-color: #000;
+    color: #fff;
+}
+.footer h1{
+    text-align: center;
+}

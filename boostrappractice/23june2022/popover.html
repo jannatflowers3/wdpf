@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Document</title>
+</head>
+<body>
+  <div class="container">
+    <div class="col-lg-9">
+       <h1>popover </h1>
+        <button data-toggle="popover" class="btn btn-success" title="jannatul ferdaush"
+        data-content="this is data popover">click me</button>
+    </div>
+    
+  </div>
+
+    <!-- <script src="js/jquery-3.6.0.slim.min.js"></script> -->
+    <script src="js/jquery.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+
+    <!-- POPVER STRING -->
+    <script>
+     jQuery(document).ready(function(){
+        jQuery('.btn-success').popover({
+            
+        })
+     })
+    </script>
+<!-- 
+    // <script>
+    //     $(document).ready(function(){
+    //       $('[data-toggle="tooltip"]').tooltip();
+    //     });
+    //     </script> -->
+        <script>
+    //         $(document).ready(function () {
+    //             $(#toltip).tooltip();
+    //         });
+    //     </script>
+     <script>
+    //          jQuery(document).ready(function($){
+    //             jQuery('.btn-success').tooltip({
+    //                 title:"my button message", plcement:"bottom"
+    //             });
+    //          })
+    //     </script>
+</body>
+</html>

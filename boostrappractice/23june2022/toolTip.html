@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Document</title>
+</head>
+<body>
+  <div class="container">
+    <div class="col-lg-9">
+       <h1>Tooltip </h1>
+        <a href="#" data-toggle="tooltip" data-placement="top" title="Hooray!">Hover</a>
+        <a href="#" data-toggle="tooltip" data-placement="bottom" title="Hooray!">Hover</a>
+        <a href="#" data-toggle="tooltip" data-placement="left" title="Hooray!">Hover</a>
+        <a href="#" data-toggle="tooltip" data-placement="right" title="Hooray!">Hover</a>
+        
+        <a href="#" id="toltip"  title="this is jannat"> home</a>
+        <button class=" btn btn-success" > click me</button>
+    </div>
+    
+  </div>
+
+    <!-- <script src="js/jquery-3.6.0.slim.min.js"></script> -->
+    <script src="js/jquery.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+
+    <script>
+        $(document).ready(function(){
+          $('[data-toggle="tooltip"]').tooltip();
+        });
+        </script>
+        <script>
+            $(document).ready(function () {
+                $(#toltip).tooltip();
+            });
+        </script>
+        <script>
+             jQuery(document).ready(function($){
+                jQuery('.btn-success').tooltip({
+                    title:"my button message", plcement:"bottom"
+                });
+             })
+        </script>
+</body>
+</html>
