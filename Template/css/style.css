@@ -1,0 +1,76 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto', sans-serif;
+    /* font-family: 'League Gothic', sans-serif; */
+}
+
+.headerTop{
+    background-color: #fff;
+    border-bottom: 1px solid #dedede ;
+    border-top: 1px solid #dedede ;
+    padding: 6px 0px;
+}
+.topright i{
+    background-color: #b99470;
+    padding: 11px;
+    color: #fff;
+    font-size: 18px;
+    border-radius: 50%;
+    margin-right: 11px;
+}
+.topright span{
+    font-weight: 400;
+    color: #181b20;
+    font-size: 14px;
+    margin-right: 14px;
+}
+.topbook{
+    
+    float: right;
+}
+.topbook i{
+    padding-right: 13px;
+}
+.topBookButton{
+    background-color: #b99470;
+    color: #fff;
+    padding: 15px 30px 15px 35px;
+    font-weight: 500;
+    border: none;
+    border-radius: 7px;
+}
+.topBookButton:hover{
+background-color: #b994708f;
+border: none;
+color: #000;
+}
+header {
+    border-bottom: 1px solid #b99470;
+}
+/* mynavigation start */
+.mynavigation {
+    background-color: gray;
+}
+.mymenu{
+    margin: 0 auto;
+}
+.sliderpadding{
+    padding: 0;
+}
+.mycaroTitle{
+    position: absolute;
+    bottom:100px;
+}
+.mycaroTitle h5{
+    font-size: 70px;
+    color: #000000cf;
+}
+.mycaroTitle p{
+    font-size: 25px;
+}
+.welcome{
+    padding: 50px;
+    margin: 0 auto;
+    background-color: #f2f2f3 ;
+}
